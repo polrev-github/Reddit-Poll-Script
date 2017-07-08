@@ -5,7 +5,7 @@ from datetime import datetime
 
 
 def Main():
-    username = 'USERNAME' # reddit username, must be mod
+    username = 'USERNAME' # reddit username, must be moderator account
     password = 'PASSWORD' # reddit password
     user_agent = ("Polling Script by /u/scriggities, modified by /u/Tyree07, v0.2")
 
@@ -14,7 +14,7 @@ def Main():
     clientCallback = 'REDIRECT_URI'
     subredditName = 'Political_Revolution' # Subreddit name
 
-    print ("Logging into Reddit")
+    print ("Logging into Reddit") #DO NOT MODIFY VARIABLES HEREIN; Fill in details above
     r = praw.Reddit(client_id=clientID,
                     client_secret=clientSecret,
                     password=password,
